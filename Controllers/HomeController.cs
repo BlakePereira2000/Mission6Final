@@ -16,6 +16,7 @@ namespace MovieMission6.Controllers
 
         public HomeController(ILogger<HomeController> logger, MovieContext context)
         {
+            //this allows us to access the repository
             _logger = logger;
             _blahContext = context;
         }
@@ -34,6 +35,7 @@ namespace MovieMission6.Controllers
         [HttpPost]
         public IActionResult MovieList(AddMovie m)
         {
+            //this adds the new movie to the database
             _blahContext.Add(m);
             _blahContext.SaveChanges();
             return View("Confirmation", m);

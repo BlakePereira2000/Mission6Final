@@ -17,6 +17,7 @@ namespace Mission6Final.Models
         protected override void OnModelCreating(ModelBuilder mb)
         {
             mb.Entity<AddMovie>().HasData(
+                // this seed data to the database
 
                 new AddMovie
                 {

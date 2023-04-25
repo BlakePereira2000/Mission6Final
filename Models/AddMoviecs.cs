@@ -5,6 +5,7 @@ namespace Mission6Final.Models
 {
     public class AddMovie
     {
+        // this creates the data table
         [Key]
         [Required]
         public int MovieId { get; set; }

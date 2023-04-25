@@ -25,6 +25,7 @@ namespace Mission6Final
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //this establishes the database connection
             services.AddControllersWithViews();
             services.AddDbContext<MovieContext>(options =>
             {
